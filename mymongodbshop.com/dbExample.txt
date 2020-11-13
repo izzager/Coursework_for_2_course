@@ -1,0 +1,34 @@
+localhost/myshop.com
+
+/*{"artist" : "",
+ "albums": [ {"idAlbum": , "albumName": "", "year": , "songs": ["", ""]},
+			 {"idAlbum": , "albumName": "", "year": , "songs": ["", ""]},
+			 {"idAlbum": , "albumName": "", "year": , "songs": ["", ""]}
+		   ]
+}*/
+
+{_id: ............
+ "genre" : "",
+ "artist" : "",
+ "albums": [ 
+			{"idAlbum": generateObjectId(), "albumName": "", "year": , "songs": []},
+			{"idAlbum": generateObjectId(), "albumName": "", "year": , "songs": []},
+			{"idAlbum": generateObjectId(), "albumName": "", "year": , "songs": []}
+		   ]
+}
+
+
+/*db.pop.insertMany([
+{_id: ............
+ "albumName": "",
+ "artist": "",
+ "year": ,
+ "songs": ["", ""]
+},
+{_id: ............
+ "albumName": "",
+ "artist": "",
+ "year": ,
+ "songs": ["", ""]
+}
+])*/

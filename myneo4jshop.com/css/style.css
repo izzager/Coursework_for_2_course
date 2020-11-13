@@ -1,0 +1,74 @@
+body {
+	background-color: #FBF3D3;
+	font-family: Courier, "Times New Roman";
+}
+.detail {
+	width: 1200px;
+	height: 500px;
+	margin: 20px;
+	padding: 20px;
+}
+.artist {
+	margin: 20px;
+	padding: 20px;
+	width: 1000px;
+	height: auto;
+
+}
+.cart {
+    width: 220px;
+    height: 340px;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+	background-color: white;
+}
+.artist .cart {
+	height: 250px;
+}
+.cart .name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.cart .cost {
+    font-size: 1.3rem;
+    margin: 25px 0;
+}
+button {
+	font-family: Courier, "Times New Roman";
+    font-size: 1.1rem;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: cadetblue;
+}
+button:active {
+    background: red;
+}
+.menu {
+	margin: 20px;
+	padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.goods-out::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-cart {
+    padding: 20px;
+	background-color: white;
+	margin: 30px;
+}
+.main-cart img {
+	width: 100px;
+}

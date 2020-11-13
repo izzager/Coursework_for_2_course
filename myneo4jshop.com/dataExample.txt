@@ -1,0 +1,96 @@
+CREATE (mj:Artist { name: "Michael Jackson", genre: "Pop" }),
+
+(mj1:Album { name: "Thriller", year: 1982, cost: 329, songs: ["Biilie Jean", "The Lady in My Life", "Pretty Young Thing", "Human Nature"] }),
+(mj2:Album { name: "Bad", year: 1987, cost: 559, songs: ["Bad", "Liberian Girl", "Just Good Friends", "Another Part of Me"] }),
+(mj3:Album { name: "Dangerous", year: 1991, cost: 459, songs: ["Jam", "Remember The Time", "Who Is It", "Heal the World"] }),
+
+(mj)-[:SING]->(mj1), (mj)-[:SING]->(mj2), (mj)-[:SING]->(mj3),
+
+
+(md:Artist { name: "Madonna", genre: "Pop" }),
+
+(md1:Album { name: "Like a Prayer", year: 1989, cost: 589, songs: ["Like a Prayer", "Promise to Try", "Cherish", "Oh Father"] }),
+(md2:Album { name: "Ray of Light", year: 1998, cost: 729, songs: ["Swim", "Nothing Really Matters", "Frozen", "The Power of Good-Bye"] }),
+(md3:Album { name: "Confessions on a Dance Floor", year: 2005, cost: 389, songs: ["Hung Up", "Sorry", "Forbidden Love", "Jump"] }),
+
+(md)-[:SING]->(md1), (md)-[:SING]->(md2), (md)-[:SING]->(md3),
+
+
+(st:Artist { name: "Sting", genre: "Pop" }),
+
+(st1:Album { name: "Nothing Like the Sun", year: 1987, cost: 299, songs: ["Englishman in New York", "We'll Be Together", "Straight To My Heart", "Little Wing"] }),
+(st2:Album { name: "Ten Summoner’s Tales", year: 1993, cost: 299, songs: ["Fields of Gold", "Shape of My Heart", "Seven Days", "Saint Augustine in Hell"] }),
+(st3:Album { name: "Brand New Day", year: 1999, cost: 199, songs: ["Desert Rose", "The End of the Game", "Big Lie Small World", "After the Rain Has Fallen"] }),
+
+(st)-[:SING]->(st1), (st)-[:SING]->(st2), (st)-[:SING]->(st3),
+
+
+(mt:Artist { name: "Modern Talking", genre: "Pop" }),
+
+(mt1:Album { name: "In the Middle of Nowhere", year: 1986, cost: 499, songs: ["Geronimo's Cadillac", "Riding on a White Swan", "Stranded in the Middle of Nowhere", "Princess Of The Night"] }),
+(mt2:Album { name: "Back for Good", year: 1998, cost: 359, songs: ["You're My Heart, You're My Soul", "Cheri Cheri Lady", "Anything Is Possible", "We Take the Chance", "Brother Louie"] }),
+(mt3:Album { name: "Alone", year: 1999, cost: 279, songs: ["You Are Not Alone", "Sexy Sexy Lover", "Don't Let Me Down", "How You Mend a Broken Heart"] }),
+
+(mt)-[:SING]->(mt1), (mt)-[:SING]->(mt2), (mt)-[:SING]->(mt3),
+
+
+(ab:Artist { name: "ABBA", genre: "Pop" }),
+
+(ab1:Album { name: "ABBA", year: 1975, cost: 249, songs: ["Mamma Mia", "Hey, Hey Helen", "S.O.S.", "Man in the Middle"] }),
+(ab2:Album { name: "Arrival", year: 1976, cost: 659, songs: ["When I Kissed the Teacher", "Dancing Queen", "My Love My Life", "Money, Money, Money"] }),
+(ab3:Album { name: "ABBA Live", year: 1986, cost: 489, songs: ["Chiquitita", "Gimme! Gimme! Gimme!", "Super Trouper", "Name of the Game"] }),
+
+(ab)-[:SING]->(ab1), (ab)-[:SING]->(ab2), (ab)-[:SING]->(ab3),
+
+
+(ac:Artist { name: "Ace of Base", genre: "Pop" }),
+
+(ac1:Album { name: "Happy Nation", year: 1993, cost: 539, songs: ["All That She Wants", "Dancer in a Daydream", "Waiting for Magic", "Wheel of Fortune"] }),
+(ac2:Album { name: "The Bridge", year: 1995, cost: 399, songs: ["Beautiful Life", "Never Gonna Say I'm Sorry", "Lucky Love", "Que sera"] }),
+(ac3:Album { name: "Flowers", year: 1998, cost: 399, songs: ["Cruel Summer", "Everytime It Rains", "Tokyo Girl", "Always Have, Always Will"] }),
+
+(ac)-[:SING]->(ac1), (ac)-[:SING]->(ac2), (ac)-[:SING]->(ac3),
+
+(qu:Artist { name: "Queen", genre: "Rock" }),
+
+(qu1:Album { name: "A Night at the Opera", year: 1975, cost: 459, songs: ["Bohemian Rhapsody", "I'm In Love With My Car", "Love Of My Life", "Sweet Lady"] }),
+(qu2:Album { name: "News of the World", year: 1977, cost: 679, songs: ["We Will Rock You", "We Are the Champions", "Sheer Heart Attack", "It's Late"] }),
+(qu3:Album { name: "The Game", year: 1980, cost: 459, songs: ["Play the Game", "Another One Bites the Dust",  "Crazy Little Thing Called Love", "Save Me"] }),
+
+(qu)-[:SING]->(qu1), (qu)-[:SING]->(qu2), (qu)-[:SING]->(qu3),
+
+
+(tb:Artist { name: "The Beatles", genre: "Rock" }),
+
+(tb1:Album { name: "Help!", year: 1965, cost: 899, songs: ["The Night Before", "Another Girl", "It's Only Love", "Yesterday"] }),
+(tb2:Album { name: "Abbey Road", year: 1968, cost: 799, songs: ["Come Together", "Something", "Here Comes the Sun", "Because"] }),
+(tb3:Album { name: "Let it be", year: 1970, cost: 899, songs: ["Let It Be", "Two Of Us", "I've Got A Feeling", "Get Back"] }),
+
+(tb)-[:SING]->(tb1), (tb)-[:SING]->(tb2), (tb)-[:SING]->(tb3),
+
+
+(rx:Artist { name: "Roxette", genre: "Rock" }),
+
+(rx1:Album { name: "Look Sharp!", year: 1988, cost: 339, songs: ["The Look", "Dance Away", "Listen to Your Heart", "Half a Woman, Half a Shadow"] }),
+(rx2:Album { name: "Tourism", year: 1992, cost: 379, songs: ["How Do You Do!", "The Heart Shaped Sea", "It Must Have Been Love", "Never Is a Long Time"] }),
+(rx3:Album { name: "Crash! Boom! Bang!", year: 1994, cost: 479, songs: ["Sleeping in My Car", "Place Your Love", "I Love the Sound of Crashing Guitars", "Go to Sleep"] }),
+
+(rx)-[:SING]->(rx1), (rx)-[:SING]->(rx2), (rx)-[:SING]->(rx3),
+
+
+(sc:Artist { name: "Scorpions", genre: "Rock" }),
+
+(sc1:Album { name: "Blackout", year: 1982, cost: 529, songs: ["Can't Live Without You", "No One Like You", "Now", "Dynamite"] }),
+(sc2:Album { name: "Crazy World", year: 1990, cost: 649, songs: ["Wind of Change", "Send Me an Angel", "Tease Me Please Me", "Lust or Love"] }),
+(sc3:Album { name: "Love at First Sting", year: 1984, cost: 489, songs: ["Rock You Like A Hurricane", "Still Loving You", "Crossfire", "Big City Nights"] }),
+
+(sc)-[:SING]->(sc1), (sc)-[:SING]->(sc2), (sc)-[:SING]->(sc3),
+
+
+(bj:Artist { name: "Bon Jovi", genre: "Rock" }),
+
+(bj1:Album { name: "7800° Fahrenheit", year: 1985, cost: 459, songs: ["In and Out of Love", "Only Lonely", "Silent Night", "To the Fire"] }),
+(bj2:Album { name: "Slippery When Wet", year: 1986, cost: 329, songs: ["Let It Rock", "Livin' On A Prayer", "Raise Your Hands", "I'd Die for You"] }),
+(bj3:Album { name: "Crush", year: 2000, cost: 339, songs: ["It's My Life", "Say It Isn't So", "Thank You For Loving Me", "Next 100 Years"] }),
+
+(bj)-[:SING]->(bj1), (bj)-[:SING]->(bj2), (bj)-[:SING]->(bj3)
